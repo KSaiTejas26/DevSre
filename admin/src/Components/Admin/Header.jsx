@@ -299,11 +299,11 @@ function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                   <Link to={page.path} style={{ textDecoration: 'none', color: 'black',fontWeight:'bold' }}>
-                    <Typography textAlign="center" variant='h6'>{page.name}</Typography>
+                    <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                        <Typography textAlign="center" variant='h6'>{page.name}</Typography>
+                    </MenuItem>
                   </Link>
-                </MenuItem>
               ))}
           </Box>
 
@@ -330,11 +330,11 @@ function ResponsiveAppBar() {
               onClose={handleCloseUserMenu}
             >
               {settings.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseUserMenu}>
                   <Link to={page.path} style={{ textDecoration: 'none', color: 'inherit',fontWeight:'bold' }}>
-                    <Typography textAlign="center">{page.name}</Typography>
+                    <MenuItem key={page.name} onClick={handleCloseUserMenu}>
+                        <Typography textAlign="center">{page.name}</Typography>
+                    </MenuItem>
                   </Link>
-                </MenuItem>
               ))}
             </Menu>
           </Box>

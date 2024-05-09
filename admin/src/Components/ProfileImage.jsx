@@ -1,60 +1,72 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-import {
-  EditablePreview,
-  Box,
-  useColorModeValue,
-  IconButton,
-  Input,
-  useDisclosure,
-  useEditableControls,
-  ButtonGroup,
-  SlideFade,
-  Editable,
-  Tooltip,
-  EditableInput,
-} from '@chakra-ui/react';
-import { CheckIcon, CloseIcon } from '@chakra-ui/icons';
+import React, { useState } from "react";
+import ReactRoundedImage from "react-rounded-image";
+import MyPhoto from "../../public/elliot.jpg";
+import Rp from "../../public/rp.jpg";
+import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
+import "./img.css";
 
-const theme = extendTheme({
-  config: {
-    useSystemColorMode: false,
-    initialColorMode: 'light',
-  },
-});
+const App = () => {
+  const [userImage, setUserImage] = useState(null);
 
-export default function App() {
-  /* Here's a custom control */
-  function EditableControls() {
-    const {
-      isEditing,
-      getSubmitButtonProps,
-      getCancelButtonProps,
-      getEditButtonProps,
-    } = useEditableControls();
+  const handleImageUpload = (event) => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
 
-    return isEditing ? (
-      <ButtonGroup justifyContent='end' size='sm' w='full' spacing={2} mt={2}>
-        <IconButton icon={<CheckIcon />} {...getSubmitButtonProps()} />
-        <IconButton icon={<CloseIcon boxSize={3} />} {...getCancelButtonProps()} />
-      </ButtonGroup>
-    ) : null;
-  }
+    reader.onload = (e) => {
+      setUserImage(e.target.result);
+    };
+
+    reader.readAsDataURL(file);
+  };
 
   return (
-    <ChakraProvider theme={theme}>
-      <Editable defaultValue='Rasengan ⚡️' isPreviewFocusable={true} selectAllOnFocus={false}>
-        <Tooltip label='Click to edit' shouldWrapChildren={true}>
-          <EditablePreview
-            py={2}
-            px={4}
-            _hover={{
-              background: useColorModeValue('gray.100', 'gray.700'),
-            }}
+    <div style={{ position: "relative" }}>
+      <div style={{ zIndex: '0' }}>
+        <img
+          src={Rp}
+          alt=""
+          style={{ height: "40vh", width: "100%" }}
+        />
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          left: "50%",
+          bottom: "-20%",
+          transform: "translateX(-50%)",
+          zIndex: '1',
+          border: '10px solid white',
+          borderRadius: "100%",
+        }}
+      >
+        <ReactRoundedImage image={userImage || MyPhoto} roundedSize="1" />
+      </div>
+      <div
+        className="cam"
+        style={{
+          zIndex: '2',
+          position: 'absolute',
+          left: '53%',
+          transform: 'translateX(-20%)',
+          border: '5px solid white',
+          borderRadius: '100%',
+          background: 'white',
+          marginTop: '30px',
+        }}
+      >
+        <label htmlFor="image-upload" style={{ cursor: 'pointer' }}>
+          <AddAPhotoIcon fontSize="large" />
+          <input
+            id="image-upload"
+            type="file"
+            accept="image/*"
+            onChange={handleImageUpload}
+            style={{ display: 'none' }}
           />
-        </Tooltip>
-        <Input py={2} px={4} as={EditableInput} />
-        <EditableControls />
-      </Editable>
-    </ChakraProvider>
+        </label>
+      </div>
+    </div>
   );
-}
+};
+
+export default App;

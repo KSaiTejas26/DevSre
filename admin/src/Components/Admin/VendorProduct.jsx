@@ -198,13 +198,12 @@ const CustomizedAccordions = () => {
 
   const filteredAccordions = [...Array(numberOfAccordions)].filter((_, index) =>
     `Vendor ${index + 1}`.toLowerCase().includes(searchTerm.toLowerCase())
-
   );
 
   return (
     <>
       <Header />
-        <h1 style={{display:'flex',justifyContent:'center',alignItems:'center'}}>List of All Vendors with their Specific Products</h1>
+      <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>List of All Vendors with their Specific Products</h1>
       <div style={{ display: 'flex', justifyContent: 'center', width: '50%', alignItems: 'center', marginLeft: '25%', marginTop: '2%' }}>
         <div>
           {/* <input type="text" value={searchTerm} onChange={handleSearch} placeholder="Search" style={{ marginBottom: '16px' }} /> */}
@@ -213,11 +212,11 @@ const CustomizedAccordions = () => {
               key={index}
               expanded={expanded === `panel${index + 1}`}
               onChange={handleChange(`panel${index + 1}`)}
-              >
+            >
               <AccordionSummary
                 aria-controls={`panel${index + 1}d-content`}
                 id={`panel${index + 1}d-header`}
-                style={{height:'100px'}}
+                style={{ height: '100px' }}
               >
                 <Typography variant='h5'>Vendor {index + 1}</Typography>
               </AccordionSummary>
@@ -228,7 +227,6 @@ const CustomizedAccordions = () => {
                     flexWrap: 'wrap',
                     justifyContent: 'flex-start',
                     marginLeft: '8%',
-                    // alignItems:'center'
                   }}
                 >
                   {generateCards(numberOfCards)}
@@ -239,7 +237,6 @@ const CustomizedAccordions = () => {
           ))}
         </div>
       </div>
-        {/* {console.log(filteredAccordions)} */}
     </>
   );
 };
