@@ -170,7 +170,10 @@
 
 
 
-import * as React from 'react';
+// import * as React from 'react';
+import React, { Component } from "react"
+import ReactRoundedImage from "react-rounded-image"
+import MyPhoto from "/elliot.jpg"
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -184,7 +187,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import Image from "../../../public/rp-logo.svg";
+import Image from "/rp-logo.svg";
+import Image1 from "/elliot.jpg";
 import { Link } from 'react-router-dom';
 import MediaQuery from "react-responsive";
 
@@ -307,14 +311,14 @@ function ResponsiveAppBar() {
               ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src={Image1}/>
               </IconButton>
             </Tooltip>
             <Menu
-              sx={{ mt: '45px' }}
+              sx={{ mt: '45px',width:'100%' }}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{
@@ -329,11 +333,16 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
+              {/* <div style={{ display: "flex" }}> */}
+                <ReactRoundedImage image={MyPhoto} />
+              {/* </div> */}
+              <hr />
               {settings.map((page) => (
                   <Link to={page.path} style={{ textDecoration: 'none', color: 'inherit',fontWeight:'bold' }}>
                     <MenuItem key={page.name} onClick={handleCloseUserMenu}>
-                        <Typography textAlign="center">{page.name}</Typography>
+                        <Typography textAlign="center" variant='h5'>{page.name}</Typography>
                     </MenuItem>
+                    {/* <hr style={{fontWeight:'0'}}/> */}
                   </Link>
               ))}
             </Menu>

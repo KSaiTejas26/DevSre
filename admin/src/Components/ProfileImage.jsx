@@ -51,7 +51,7 @@ const App = () => {
           border: '5px solid white',
           borderRadius: '100%',
           background: 'white',
-          marginTop: '30px',
+          marginTop: '20px',
         }}
       >
         <label htmlFor="image-upload" style={{ cursor: 'pointer' }}>

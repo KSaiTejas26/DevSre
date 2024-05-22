@@ -15,7 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import Image from "../../../public/rp-logo.svg";
 import { Link } from 'react-router-dom';
 import MediaQuery from "react-responsive";
-
+import i1 from "../../../public/elliot.jpg";
 // const pages = [
 //   { name: 'Requests', path: '/requests' },
 //   { name: 'Vendors', path: '/vendors' },
@@ -99,7 +99,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end' }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src={i1} />
               </IconButton>
             </Tooltip>
             <Menu
