@@ -1,0 +1,222 @@
+{
+  "arrayOfProducts": [
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/epipremnum-potted-plant-golden-pothos__0492128_pe625482_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 110
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-plant-wall-mounted-in-outdoor-green-lilac__1183252_pe897453_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 91
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-with-pot-in-outdoor-succulent__0614187_pe686812_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 94.5
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-monstera__0959226_pe809439_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 438.9
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/chrysanthemum-potted-plant-chrysanthemums-assorted-colours__0614375_pe686879_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 20
+    },{
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-decoration-grass__0720952_pe732958_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 110
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-bamboo__0748884_pe745273_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 91
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-with-pot-in-outdoor-bonsai__0959215_pe809457_s5.jpg?f=xxs",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 94.5
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-string-of-bananas-hanging__1034086_pe840197_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 438.9
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/spathiphyllum-potted-plant-peace-lily__0611636_pe686865_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 20
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/epipremnum-potted-plant-silver-vine__0611637_pe686866_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 110
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/epipremnum-potted-plant-golden-pothos__0492128_pe625482_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 110
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-plant-wall-mounted-in-outdoor-green-lilac__1183252_pe897453_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 91
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-with-pot-in-outdoor-succulent__0614187_pe686812_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 94.5
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-monstera__0959226_pe809439_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 438.9
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/chrysanthemum-potted-plant-chrysanthemums-assorted-colours__0614375_pe686879_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 20
+    },{
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-decoration-grass__0720952_pe732958_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 110
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-bamboo__0748884_pe745273_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 91
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-with-pot-in-outdoor-bonsai__0959215_pe809457_s5.jpg?f=xxs",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 94.5
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-string-of-bananas-hanging__1034086_pe840197_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 438.9
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/spathiphyllum-potted-plant-peace-lily__0611636_pe686865_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 20
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/epipremnum-potted-plant-silver-vine__0611637_pe686866_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 110
+    }
+    ,{
+      "imgUrl": "https://www.ikea.com/in/en/images/products/epipremnum-potted-plant-golden-pothos__0492128_pe625482_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 110
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-plant-wall-mounted-in-outdoor-green-lilac__1183252_pe897453_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 91
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-with-pot-in-outdoor-succulent__0614187_pe686812_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 94.5
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-monstera__0959226_pe809439_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 438.9
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/chrysanthemum-potted-plant-chrysanthemums-assorted-colours__0614375_pe686879_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 20
+    },{
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-decoration-grass__0720952_pe732958_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 110
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-bamboo__0748884_pe745273_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 91
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-with-pot-in-outdoor-bonsai__0959215_pe809457_s5.jpg?f=xxs",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 94.5
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-string-of-bananas-hanging__1034086_pe840197_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 438.9
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/spathiphyllum-potted-plant-peace-lily__0611636_pe686865_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 20
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/epipremnum-potted-plant-silver-vine__0611637_pe686866_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 110
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/epipremnum-potted-plant-golden-pothos__0492128_pe625482_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 110
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-plant-wall-mounted-in-outdoor-green-lilac__1183252_pe897453_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 91
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-with-pot-in-outdoor-succulent__0614187_pe686812_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 94.5
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-monstera__0959226_pe809439_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 438.9
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/chrysanthemum-potted-plant-chrysanthemums-assorted-colours__0614375_pe686879_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 20
+    },{
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-decoration-grass__0720952_pe732958_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 110
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-bamboo__0748884_pe745273_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 91
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-with-pot-in-outdoor-bonsai__0959215_pe809457_s5.jpg?f=xxs",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 94.5
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-string-of-bananas-hanging__1034086_pe840197_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 438.9
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/spathiphyllum-potted-plant-peace-lily__0611636_pe686865_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 20
+    },
+    {
+      "imgUrl": "https://www.ikea.com/in/en/images/products/epipremnum-potted-plant-silver-vine__0611637_pe686866_s5.jpg?f=xl",
+      "name": "Money Golden Natural Plant In White Self Watering Plastic Pot",
+      "price": 110
+    }
+    
+    
+  ]
+}
