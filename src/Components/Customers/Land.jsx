@@ -14,6 +14,9 @@ import clock from "./Images/clock.jpg";
 import chair from "./Images/chair.jpg";
 import BasicExample from "./Category";
 import Horizontal from "./Horizontal";
+import banner from "./Images/banner.avif";
+import banner1 from "./Images/banner1.avif";
+import banner2 from "./Images/banner2.avif";
 
 function Land() {
   return (
@@ -83,7 +86,7 @@ function Land() {
 
 
       <div className="container my-5 d-flex justify-content-center">
-        <h1>Explore Different Categories</h1>
+        <h1><strong>Explore Different Categories</strong></h1>
       </div>
       <div className="row my-5 mx-3 d-flex justify-content-center">
         <div className="col-md-4 d-flex justify-content-center mb-5">
@@ -107,7 +110,22 @@ function Land() {
           <BasicExample img={clock} title="Clocks" />
         </div>
       </div>
-      <Horizontal />
+      <img src={banner} className='w-100' alt="advertisement"/>
+      <div className="row d-flex my-5">
+      <div className="col-md-6 d-flex justify-content-center ">
+        <img className="w-100" src={banner1} alt="advertisement"/>
+      </div>
+      <div className="col-md-6 d-flex justify-content-center">
+        <img className="w-100" src={banner2} alt="advertisement"/>
+      </div>
+      </div>
+      <h1 style={{fontSize:"30px"}} className="d-flex justify-content-center my-3">New launches in sofas</h1>
+      <div className="my-3" ><Horizontal category = "sofa"/></div>
+      <div className="my-10"><h1 style={{fontSize:"30px"}} className="d-flex justify-content-center">New launches in Fridges</h1>
+      <div className="my-3" ><Horizontal category="fridge"/></div>
+      </div>
+      
+      
     </>
   );
 }

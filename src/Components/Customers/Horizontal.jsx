@@ -1,151 +1,159 @@
 import React, { useState, useRef } from "react";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import { ChakraProvider, Box, Flex, Button, useMediaQuery } from "@chakra-ui/react";
 import img2 from "./Images/img5.jpg";
 import Prod from "./Prod";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import sofa1 from './Images/sofa1.jpg';
+import sofa2 from './Images/sofa2.jpg';
+import sofa3 from './Images/sofa3.jpg';
+import sofa4 from './Images/sofa4.jpg';
+import sofa5 from './Images/sofa5.jpg';
+import fridge1 from './Images/fridge.jpg';
+import fridge2 from './Images/fridge2.jpg';
+import fridge3 from './Images/fridge3.jpg';
+import fridge4 from './Images/fridge4.jpg';
+import fridge5 from './Images/fridge5.jpg';
 
-function Horizontal() {
+
+function Horizontal(props) {
   const data = [
     {
-      img: img2,
+      img: sofa1,
       name: "Product1",
+      category: "sofa",
       desc: "Generating random paragraphs...",
       brand: "Realpage",
       price: "18000",
     },
     {
-      img: img2,
+      img: sofa2,
       name: "Product1",
+      category: "sofa",
       desc: "Generating random paragraphs...",
       brand: "Realpage",
       price: "18000",
     },
     {
-      img: img2,
+      img: sofa3,
       name: "Product1",
+      category: "sofa",
       desc: "Generating random paragraphs...",
       brand: "Realpage",
       price: "18000",
     },
     {
-      img: img2,
+      img: sofa4,
       name: "Product1",
+      category: "sofa",
       desc: "Generating random paragraphs...",
       brand: "Realpage",
       price: "18000",
     },
     {
-      img: img2,
+      img: sofa5,
       name: "Product1",
+      category: "sofa",
       desc: "Generating random paragraphs...",
       brand: "Realpage",
       price: "18000",
     },
     {
-      img: img2,
+      img: sofa1,
       name: "Product1",
+      category: "sofa",
       desc: "Generating random paragraphs...",
       brand: "Realpage",
       price: "18000",
     },
     {
-      img: img2,
+      img: fridge1,
       name: "Product1",
+      category: "fridge",
+      desc: "Generating random paragraphs...",
+      brand: "Realpage",
+      price: "18000",
+    },
+    {
+      img: fridge2,
+      name: "Product1",
+      category: "fridge",
+      desc: "Generating random paragraphs...",
+      brand: "Realpage",
+      price: "18000",
+    },
+    {
+      img: fridge3,
+      name: "Product1",
+      category: "fridge",
+      desc: "Generating random paragraphs...",
+      brand: "Realpage",
+      price: "18000",
+    },
+    {
+      img: fridge4,
+      name: "Product1",
+      category: "fridge",
+      desc: "Generating random paragraphs...",
+      brand: "Realpage",
+      price: "18000",
+    },
+    {
+      img: fridge5,
+      name: "Product1",
+      category: "fridge",
       desc: "Generating random paragraphs...",
       brand: "Realpage",
       price: "18000",
     },
     // Add more product objects as needed
   ];
-  const [scroll, setScroll] = useState(0);
-  const scrollElement = useRef();
-  const [isLargerThanMd] = useMediaQuery("(min-width: 768px)");
+  console.log(props.category);
+const info=data.filter((e)=>e.category==props.category);
 
-  const scrollRight = () => {
-    const container = scrollElement.current;
-    const scrollWidth = container.scrollWidth;
-    const clientWidth = container.clientWidth;
-    const maxScroll = scrollWidth - clientWidth;
-    const newScroll = Math.min(scroll + 300, maxScroll);
-    setScroll(newScroll);
-    container.scrollTo({
-      left: newScroll,
-      behavior: "smooth",
-    });
-  };
-
-  const scrollLeft = () => {
-    const container = scrollElement.current;
-    const newScroll = Math.max(scroll - 300, 0);
-    setScroll(newScroll);
-    container.scrollTo({
-      left: newScroll,
-      behavior: "smooth",
-    });
+  
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <ChakraProvider>
-      <div className="row">
-        <div className="col-md-1 d-flex justify-content-center">
-          <Button
-            bg="white"
-            shadow="md"
-            rounded="full"
-            p="1"
-            top="50%"
-            transform="translateY(-50%)"
-            onClick={scrollLeft}
-            display={isLargerThanMd ? "inline-flex" : "none"}
-          >
-            <ArrowBackIosNewIcon />
-          </Button>
+    
+    <div className="mx-auto">
+    <Slider {...settings}>
+      {info.map((product, index) => (
+        <div className="d-flex justify-content-center"><div className="flex flex-row md:mx-auto" key={index}>
+          <Prod {...product} />
         </div>
-        <div className="col-md-10">
-          <Box>
-            <h2 className="text-2xl font-semibold py-4">
-              New Launches in Sofas
-            </h2>
-            <Flex
-              direction={isLargerThanMd ? "row" : "row"} // Adjust direction based on screen size
-              align="center"
-              overflowX={isLargerThanMd ? "auto" : "auto"} // Disable horizontal scrolling on small screens
-              ref={scrollElement}
-              css={{
-                "&::-webkit-scrollbar": {
-                  height: "8px",
-                },
-                "&::-webkit-scrollbar-thumb": {
-                  backgroundColor: "gray",
-                  borderRadius: "8px",
-                },
-              }}
-            >
-              {data.map((product, index) => (
-                <Box key={index} flexShrink={0} mx={isLargerThanMd ? 2 : 0} my={isLargerThanMd ? 0 : 2}>
-                  <Prod {...product} />
-                </Box>
-              ))}
-            </Flex>
-          </Box>
         </div>
-        <div className="col-md-1 d-flex justify-content-center">
-          <Button
-            bg="white"
-            shadow="md"
-            rounded="full"
-            p="1"
-            top="50%"
-            transform="translateY(-50%)"
-            onClick={scrollRight}
-            display={isLargerThanMd ? "inline-flex" : "none"}
-          >
-            <ArrowForwardIosIcon />
-          </Button>
-        </div>
-      </div>
-    </ChakraProvider>
+      ))}
+    </Slider>
+  </div>
+            
+   
   );
 }
 

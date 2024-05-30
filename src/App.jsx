@@ -13,7 +13,7 @@ import AdminProfile from './Components/Admin/AdminProfile'; // admin profile
 import AddVendors from './Components/Admin/Vendors/AddVendors'; // add vendor
 import 'bootstrap/dist/css/bootstrap.min.css';
 //Customer
-import Land from '../../second/admin/src/Components/Customers/Land';
+import Land from './Components/Customers/Land';
 //Authentication
 import Login from '../src/Components/Authentication/Login';
 import LandingRegister from '../src/Components/Authentication/LandingRegister';
