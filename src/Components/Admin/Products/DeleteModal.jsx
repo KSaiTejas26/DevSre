@@ -4,16 +4,14 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 
 export default function Example() {
   const [open, setOpen] = useState(false)
+  const set=()=>
+  {
+    setOpen(true);
+  }
 
   return (
     <Fragment>
-      <button
-        type="button"
-        className="inline-flex justify-center w-full rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-800 mt-1"
-        onClick={() => setOpen(true)}
-        >
-        Delete
-       </button>
+      
       <Transition show={open}>
         <Dialog className="relative z-10" onClose={() => setOpen(false)}>
           <TransitionChild
