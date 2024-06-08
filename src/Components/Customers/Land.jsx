@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import DarkVariantExample from "./corousel";
 import IndividualIntervalsExample from "./corousel";
 import PrimarySearchAppBar from "./Navbar";
@@ -17,8 +17,15 @@ import Horizontal from "./Horizontal";
 import banner from "./Images/banner.avif";
 import banner1 from "./Images/banner1.avif";
 import banner2 from "./Images/banner2.avif";
-
-function Land() {
+import prodcontext from "./Context/ProductContext";
+import { useContext,useEffect } from "react";
+const Land=()=> {
+  
+  const context=useContext(prodcontext);
+  const {data}=context;
+  const [res,setres]=useState([]);
+  console.log(data);
+  
   return (
     <>
       <PrimarySearchAppBar />

@@ -19,10 +19,14 @@ import Login from '../src/Components/Authentication/Login';
 import LandingRegister from '../src/Components/Authentication/LandingRegister';
 import CustomerRegister from '../src/Components/Authentication/CustomerRegister';
 import VendorRegister from '../src/Components/Authentication/VendorRegister';
-
+import ProductState from './Components/Customers/Context/ProductState';
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function App() {
   return (
     <>
+    <ToastContainer/>
+    <ProductState>
       <Routes>
         {/*Vendor Routes*/}
         <Route path="/vendorproducts" Component={VendorsProduct}></Route> 
@@ -45,6 +49,7 @@ export default function App() {
         <Route path='/Register/VendorRegister' Component={VendorRegister}></Route>
       </Routes>
       
+    </ProductState>
     </>
   )
 }

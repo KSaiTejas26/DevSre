@@ -6,7 +6,7 @@ import img3 from './Images/img3.webp';
 
 function DarkVariantExample() {
   return (
-    <Carousel data-bs-theme="dark" style={{ margin: "40px" }}>
+    <Carousel  data-bs-theme="dark" style={{ marginTop: "70px" }}>
       <Carousel.Item>
         <img
           className="d-block w-100"

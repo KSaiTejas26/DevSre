@@ -19,6 +19,7 @@ import fridge5 from './Images/fridge5.jpg';
 function Horizontal(props) {
   const data = [
     {
+      id:1,
       img: sofa1,
       name: "Product1",
       category: "sofa",
@@ -27,6 +28,7 @@ function Horizontal(props) {
       price: "18000",
     },
     {
+      id:2,
       img: sofa2,
       name: "Product1",
       category: "sofa",
@@ -35,6 +37,7 @@ function Horizontal(props) {
       price: "18000",
     },
     {
+      id:3,
       img: sofa3,
       name: "Product1",
       category: "sofa",
@@ -43,6 +46,7 @@ function Horizontal(props) {
       price: "18000",
     },
     {
+      id:4,
       img: sofa4,
       name: "Product1",
       category: "sofa",
@@ -51,6 +55,7 @@ function Horizontal(props) {
       price: "18000",
     },
     {
+      id:5,
       img: sofa5,
       name: "Product1",
       category: "sofa",
@@ -59,6 +64,7 @@ function Horizontal(props) {
       price: "18000",
     },
     {
+      id:6,
       img: sofa1,
       name: "Product1",
       category: "sofa",
@@ -67,6 +73,7 @@ function Horizontal(props) {
       price: "18000",
     },
     {
+      id:7,
       img: fridge1,
       name: "Product1",
       category: "fridge",
@@ -75,6 +82,7 @@ function Horizontal(props) {
       price: "18000",
     },
     {
+      id:8,
       img: fridge2,
       name: "Product1",
       category: "fridge",
@@ -83,6 +91,7 @@ function Horizontal(props) {
       price: "18000",
     },
     {
+      id:9,
       img: fridge3,
       name: "Product1",
       category: "fridge",
@@ -91,6 +100,7 @@ function Horizontal(props) {
       price: "18000",
     },
     {
+      id:10,
       img: fridge4,
       name: "Product1",
       category: "fridge",
@@ -99,6 +109,7 @@ function Horizontal(props) {
       price: "18000",
     },
     {
+      id:11,
       img: fridge5,
       name: "Product1",
       category: "fridge",
@@ -108,7 +119,7 @@ function Horizontal(props) {
     },
     // Add more product objects as needed
   ];
-  console.log(props.category);
+  
 const info=data.filter((e)=>e.category==props.category);
 
   
