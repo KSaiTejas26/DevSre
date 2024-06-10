@@ -21,6 +21,7 @@ import { Dialog, DialogPanel, DialogTitle, Transition, TransitionChild } from '@
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { useState,useContext } from 'react';
 import prodcontext from "./Context/ProductContext";
+import SearchBar from '../SearchBar'
 
 const LogoImage = styled('img')(({ theme }) => ({
   height: 'auto',
@@ -184,7 +185,7 @@ export default function PrimarySearchAppBar() {
   );
 
   return (
-    <>
+    < div className="mb-5">
       <Transition show={showCart}>
         <Dialog className="relative z-20" onClose={setShowCart}>
           <TransitionChild
@@ -314,12 +315,13 @@ export default function PrimarySearchAppBar() {
               <LogoImage src={Img} alt="Logo" />
             </Typography>
 
-            <Search>
+            {/* <Search>
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>
-              <StyledInputBase placeholder="Search…" inputProps={{ 'aria-label': 'search', color: 'black' }} />
-            </Search>
+              <SearchBar/>
+            </Search> */}
+            <SearchBar/>
             <Box sx={{ flexGrow: 1 }} />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
               <IconButton size="large" aria-label="show 4 new mails" color="black" onClick={handleClickCart}>
@@ -361,6 +363,6 @@ export default function PrimarySearchAppBar() {
         {renderMobileMenu}
         {renderMenu}
       </Box>
-    </>
+    </div>
   );
 }

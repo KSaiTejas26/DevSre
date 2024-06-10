@@ -127,7 +127,7 @@ const info=data.filter((e)=>e.category==props.category);
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {

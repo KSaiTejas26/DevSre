@@ -14,6 +14,8 @@ import AddVendors from './Components/Admin/Vendors/AddVendors'; // add vendor
 import 'bootstrap/dist/css/bootstrap.min.css';
 //Customer
 import Land from './Components/Customers/Land';
+import Category from './Components/Customers/CategoryWiseProductPage/category'
+import Vendorspecific from './Components/VendorSpecific/VendorStore'
 //Authentication
 import Login from '../src/Components/Authentication/Login';
 import LandingRegister from '../src/Components/Authentication/LandingRegister';
@@ -42,6 +44,8 @@ export default function App() {
         <Route path='/addvendor' Component={AddVendors}></Route>
         {/* customer routes */}
         <Route path='/customer' Component={Land}></Route>
+        <Route path="/vendorspecific" element={<Vendorspecific/>} />
+        <Route path="/category/:name" element={<Category/>} />
         {/* loginroutes */}
         <Route path='/' Component={Login}></Route>
         <Route path='/Register' Component={LandingRegister}></Route>
