@@ -23,6 +23,7 @@ import CustomerRegister from '../src/Components/Authentication/CustomerRegister'
 import VendorRegister from '../src/Components/Authentication/VendorRegister';
 import ProductState from './Components/Customers/Context/ProductState';
 import { ToastContainer} from 'react-toastify';
+import SoloProductPage from'./Components/Customers/SoloproductPage';
 import 'react-toastify/dist/ReactToastify.css';
 export default function App() {
   return (
@@ -45,7 +46,9 @@ export default function App() {
         {/* customer routes */}
         <Route path='/customer' Component={Land}></Route>
         <Route path="/vendorspecific" element={<Vendorspecific/>} />
-        <Route path="/category/:name" element={<Category/>} />
+        <Route path="/category/:value" element={<Category/>} />
+        <Route path="/SoloProduct/:id" element={<SoloProductPage/>} />
+        
         {/* loginroutes */}
         <Route path='/' Component={Login}></Route>
         <Route path='/Register' Component={LandingRegister}></Route>

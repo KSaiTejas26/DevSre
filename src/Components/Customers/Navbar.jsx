@@ -22,6 +22,7 @@ import { XMarkIcon } from '@heroicons/react/24/outline';
 import { useState,useContext } from 'react';
 import prodcontext from "./Context/ProductContext";
 import SearchBar from '../SearchBar'
+import { ToastContainer, toast } from 'react-toastify';
 
 const LogoImage = styled('img')(({ theme }) => ({
   height: 'auto',
@@ -75,13 +76,24 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function PrimarySearchAppBar() {
   const context=useContext(prodcontext);
-  const {cart}=context;
+  let {cart,deleteCart}=context;
   const [open, setOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
   const [showCart, setShowCart] = useState(false);
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+ 
+  const handleDeleteClick=(id)=>{
+    try{
+      deleteCart(id);
+      toast.success("Removed Successfully");
+    }
+    catch(error)
+    {
+      console.log(error);
+    }
+  }
 
   
 
@@ -235,7 +247,7 @@ export default function PrimarySearchAppBar() {
                                 <li key={product.id} className="flex py-6">
                                   <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                                     <img
-                                      src={product.imageSrc}
+                                      src={product.image}
                                       alt={product.imageAlt}
                                       className="h-full w-full object-cover object-center"
                                     />
@@ -245,17 +257,18 @@ export default function PrimarySearchAppBar() {
                                     <div>
                                       <div className="flex justify-between text-base font-medium text-gray-900">
                                         <h3>
-                                          <a href={product.href}>{product.name}</a>
+                                          <a href={product.href}>{product.product_name}</a>
                                         </h3>
                                         <p className="ml-4">{product.price}</p>
                                       </div>
-                                      <p className="mt-1 text-sm text-gray-500">{product.brand}</p>
+                                      <p className="mt-1 text-sm text-gray-500">{product.product_brand}</p>
                                     </div>
                                     <div className="flex flex-1 items-end justify-between text-sm">
                                       <p className="text-gray-500">Qty {product.quantity}</p>
 
                                       <div className="flex">
                                         <button
+                                         onClick={()=>handleDeleteClick(product._id)}
                                           type="button"
                                           className="font-medium text-indigo-600 hover:text-indigo-500"
                                         >

@@ -4,8 +4,8 @@ import SearchResult from "./SearchResult";
 const SearchResultsList = ({ results, vendordata }) => {
   return (
     <div className="results-list">
-      {console.log("In search list", results)}
-      {console.log("In search list", vendordata)}
+      {/* {console.log("In search list", results)}
+      {console.log("In search list", vendordata)} */}
  
       {results.map((result, id) => (
         <SearchResult result={result} key={id} type={"category"} />
