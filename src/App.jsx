@@ -31,6 +31,8 @@ import Category from './Components/Customers/CategoryWiseProductPage/category'
 import Vendorspecific from './Components/VendorSpecific/VendorStore'
 import ProductState from './Components/Customers/Context/ProductState';
 import SoloProductPage from'./Components/Customers/SoloproductPage';
+import Checkout from './Components/Customers/Checkout';
+import CheckoutPage from './Components/Customers/Checkout2';
 import { OrderTable } from './Components/Vendor/ProductTracking/OrderTable';
 
 
@@ -74,6 +76,8 @@ function App() {
         <Route path="/vendorspecific" element={<Vendorspecific/>} />
         <Route path="/category/:value" element={<Category/>} />
         <Route path="/SoloProduct/:id/customer" element={<SoloProductPage/>} />
+        <Route path="/Checkout" element={<Checkout/>} />
+        <Route path="/Checkout2" element={<CheckoutPage/>} />
         
       </Routes>
       </ProductState>

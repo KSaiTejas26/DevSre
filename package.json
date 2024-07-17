@@ -38,6 +38,7 @@
     "flowbite": "^2.3.0",
     "font-awesome": "^4.7.0",
     "framer-motion": "^11.1.7",
+    "mdb-react-ui-kit": "^8.0.0",
     "preline": "^2.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",

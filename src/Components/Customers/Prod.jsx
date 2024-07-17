@@ -24,6 +24,8 @@ function Prod(props) {
         product_brand: obj.brand,
         price: obj.price,
         image: obj.main_image,
+        product_id:obj._id,
+        vendor_id:obj.vid
         
     }
     
